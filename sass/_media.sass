@@ -1,0 +1,78 @@
+@media (max-width: 1199px)
+  .container
+    width: 970px
+
+@media (max-width: 992px)
+  .form
+    margin: auto
+  .container
+    width: 767px
+  .main
+    &-text
+      &__title
+        font-size: 30px
+        line-height: 36px
+  .feedback
+    text-align: center
+    background: #fff
+@media (max-width: 768px)
+  .hidden-xs
+    display: none
+  .container
+    width: 95% 
+  .main
+    &-wrap
+      flex-direction: column
+    &-text
+      max-width: 400px
+      margin: auto
+      &__title
+        text-align: center
+  .form
+    &__input
+      &:first-child
+        margin-right: 0
+    &__manage-team
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__manager
+      margin-right: 0
+      margin-bottom: 10px
+    &__contacts
+      display: flex
+      flex-direction: column
+      align-items: center
+      &:before
+        margin-right: 0
+        margin-bottom: 10px 
+@media (max-width: 576px)
+  .header
+    &-text
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      &__contacts
+        margin-right: 0
+      &__phone
+        font-size: 16px
+  .form
+    display: flex
+    flex-direction: column
+    &__input
+      &:first-child
+        margin-right: 0
+    &__manage-team
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__manager
+      margin-right: 0
+      margin-bottom: 10px
+    &__contacts
+      display: flex
+      flex-direction: column
+      align-items: center
+      &:before
+        margin-right: 0
+        margin-bottom: 10px
