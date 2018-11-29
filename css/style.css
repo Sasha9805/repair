@@ -606,6 +606,116 @@ template {
   font-family: "Museo Sans Bold", sans-serif;
 }
 
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: none;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__dialog {
+  width: 1170px;
+  height: 674px;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.modal__left {
+  padding-top: 80px;
+  padding-bottom: 75px;
+  padding-left: 80px;
+  padding-right: 115px;
+  background-color: #f7f7f7;
+}
+
+.modal__rooms {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.modal__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.modal__img {
+  margin-right: 30px;
+}
+
+.modal__line_yellow {
+  margin-bottom: 12px;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.modal__descr {
+  width: 180px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+}
+
+.modal__prices {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.modal__prices_bold {
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.modal__text {
+  line-height: 45px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-size: 14px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal__close:hover {
+  cursor: pointer;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -623,6 +733,19 @@ body {
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  list-style-image: url(../img/modal/list-img.png);
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  line-height: 25px;
+  font-size: 14px;
 }
 
 @media (max-width: 1199px) {

@@ -19,7 +19,7 @@
           <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
         <div class="header-text__button">
-          <button class="button">Перезвоните <span class="hidden-xs">мне</span></button>
+          <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
         </div>
       </div> 
     </div>
@@ -103,6 +103,111 @@
       </div>
     </div>
   </section>
+
+  <div class="modal" id="modal-callback">
+    <div class="modal__dialog">
+      <div class="modal__close">&#10006</div>  
+      <div class="modal__left">
+        <div class="modal__rooms">
+          <div class="modal__item">
+            <div class="modal__img">
+              <img src="img/modal/callback/bath.png" alt="">
+            </div>
+            <div class="modal__descr">
+              <div class="modal__title">
+                Ванная комната
+              </div>
+              <div class="modal__line_yellow"></div>
+              <div class="modal__prices">
+                135*150 - <span class="modal__prices_bold">31 000 руб.</span>
+                170*170 - <span class="modal__prices_bold">43 000 руб.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__item">
+            <div class="modal__img">
+              <img src="img/modal/callback/toilet.png" alt="">
+            </div>
+            <div class="modal__descr">
+              <div class="modal__title">
+                Туалет
+              </div>
+              <div class="modal__line_yellow"></div>
+              <div class="modal__prices">
+                135*150 - <span class="modal__prices_bold">14 000 руб.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__item">
+            <div class="modal__img">
+              <img src="img/modal/callback/joint-bath.png" alt="">
+            </div>
+            <div class="modal__descr">
+              <div class="modal__title">
+                Совмещенный санузел
+              </div>
+              <div class="modal__line_yellow"></div>
+              <div class="modal__prices">
+                170*170 - <span class="modal__prices_bold">54 000 руб.</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="modal__labor">
+          <div class="modal__text">В стоимость работ входит</div>
+          <div class="modal__list">
+            <ul>
+              <li>Демонтаж старого покрытия стен и пола</li>
+              <li>Выравнивание стен гипсовыми составами</li>
+              <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+              <li>Монтаж кафельной плитки на полу и стенах</li>
+              <li>Установка реечного или натяжного потолка, светильников</li>
+              <li>Монтаж двери с коробкой</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="modal__right">
+        <form action="#">
+          <input type="text" class="form__input input input-name" placeholder="Ваше имя">
+          <input type="tel" class="form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+            pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}">
+          <button type="submit" class="button form__button">Получить бесплатный дизайн-&nbsp;проект</button>
+        </form>
+      </div> 
+    </div>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#button-callback').on('click', function() {
+        // console.log('Вы нажали на кнопку');
+        $('#modal-callback').toggleClass('modal_visible');
+      });
+      $('.modal__close').on('click', function () {
+        $('#modal-callback').toggleClass('modal_visible');
+      });
+    });
+  </script> -->
+  <script>
+    var button = document.querySelector('#button-callback');
+    var modal = document.querySelector('#modal-callback');
+    var close = document.querySelector('.modal__close');
+    button.addEventListener('click', function () {
+      // console.log('Вы нажали на кнопку');
+      modal.classList.toggle('modal_visible');
+    });
+    close.addEventListener('click', function () {
+        document.querySelector('#modal-callback').classList.toggle('modal_visible');
+    });
+  </script>
 
 </body>
 </html>
