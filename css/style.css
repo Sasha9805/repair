@@ -645,6 +645,17 @@ template {
   background-color: #f7f7f7;
 }
 
+.modal__right {
+  padding-top: 80px;
+  padding-bottom: 75px;
+  padding-left: 80px;
+  padding-right: 115px;
+}
+
+.modal__input {
+  width: 100%;
+}
+
 .modal__rooms {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -687,8 +698,29 @@ template {
           justify-content: center;
 }
 
+.modal__subtitle-tel {
+  text-align: center;
+  margin-bottom: 53px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .modal__title {
   margin-bottom: 12px;
+}
+
+.modal__title-tel {
+  width: 290px;
+  font-family: "Museo Sans Bold", sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 33px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
 .modal__prices {
@@ -706,6 +738,13 @@ template {
   font-size: 14px;
 }
 
+.modal__list {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  width: 420px;
+}
+
 .modal__close {
   position: absolute;
   top: 15px;
@@ -714,6 +753,28 @@ template {
 
 .modal__close:hover {
   cursor: pointer;
+}
+
+.modal__footer {
+  width: 270px;
+  text-align: center;
+  margin: auto;
+}
+
+.modal__footer-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 13px;
+}
+
+.modal__footer-tel {
+  text-align: center;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 *, *:after, *:before {
@@ -890,6 +951,211 @@ li {
   .form__contacts:before {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .modal__dialog {
+    width: 970px;
+  }
+  .modal__left {
+    width: 53%;
+  }
+  .modal__right {
+    width: 46%;
+    padding: 20px 40px;
+  }
+  .modal__subtitle-tel {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal__dialog {
+    width: 767px;
+  }
+  .modal__left {
+    min-width: 55%;
+    padding: 20px 20px;
+  }
+  .modal__rooms {
+    height: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal__img {
+    margin-right: 0;
+  }
+  .modal__line_yellow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal__labor {
+    display: none;
+  }
+  .button__none {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal__dialog {
+    width: 577px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 40%;
+    width: 100%;
+  }
+  .modal__descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .modal__rooms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .modal__right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 60%;
+    width: 100%;
+  }
+  .modal__title-tel {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .modal__subtitle-tel {
+    margin-bottom: 10px;
+  }
+  .modal__input {
+    width: 95%;
+  }
+  .modal__button {
+    width: 95%;
+  }
+  .modal__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 65%;
+  }
+  .modal__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal__dialog {
+    width: 100%;
+  }
+  .modal__left {
+    display: none;
+  }
+  .modal__right {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .modal__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .modal__input {
+    width: 100%;
+  }
+  .modal__button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .modal__footer-text {
+    width: 100%;
+  }
+  .modal__footer-tel {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

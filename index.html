@@ -106,7 +106,7 @@
 
   <div class="modal" id="modal-callback">
     <div class="modal__dialog">
-      <div class="modal__close">&#10006</div>  
+      <div class="modal__close b-close">&#10006</div>  
       <div class="modal__left">
         <div class="modal__rooms">
           <div class="modal__item">
@@ -174,18 +174,56 @@
       </div>
 
       <div class="modal__right">
-        <form action="#">
-          <input type="text" class="form__input input input-name" placeholder="Ваше имя">
-          <input type="tel" class="form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра."
-            pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}">
-          <button type="submit" class="button form__button">Получить бесплатный дизайн-&nbsp;проект</button>
-        </form>
+        <div class="modal__title-tel">
+          Узнайте точную стоимость ремонта по телефону!
+        </div>
+        <div class="modal__subtitle-tel">
+          Заполните поля ниже - мы свяжемся с Вами
+        </div>
+        <div class="modal__wrap">
+          <div class="modal__form">
+            <form action="#">
+              <input type="text" class="modal__input form__input input input-name" placeholder="Ваше имя">
+              <input type="tel" class="modal__input form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+                pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}">
+              <button type="submit" class="button modal__button form__button">Получить <span class="button__none">бесплатный</span>
+                дизайн-&nbsp;проект</button>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <div class="modal__footer-text">
+              Или Вы можете перезвонить нам сами по телефону:
+            </div>
+            <div class="modal__footer-tel">
+              +7 (8182) 42-51-31
+            </div>
+          </div>
+        </div>
       </div> 
     </div>
   </div>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Библиотека jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Плагин bPopup -->
+  <script src="jquery.bpopup.min.js"></script>
+
+  <!-- Скрипт с помощью bPopup -->
   <script>
+    ;(function($) {
+      $(document).ready(function () {
+            $('#button-callback').bind('click', function (e) {
+              e.preventDefault();
+              $('#modal-callback').bPopup({
+                positionStyle: 'fixed'
+              });
+            });
+          });
+    })(jQuery);
+  </script>
+  
+  <!-- С помощью jQuery -->
+  <!-- <script>
     $(document).ready(function () {
       $('#button-callback').on('click', function() {
         // console.log('Вы нажали на кнопку');
@@ -196,7 +234,9 @@
       });
     });
   </script> -->
-  <script>
+
+  <!-- С помощью JS -->
+  <!-- <script>
     var button = document.querySelector('#button-callback');
     var modal = document.querySelector('#modal-callback');
     var close = document.querySelector('.modal__close');
@@ -207,7 +247,7 @@
     close.addEventListener('click', function () {
         document.querySelector('#modal-callback').classList.toggle('modal_visible');
     });
-  </script>
+  </script> -->
 
 </body>
 </html>

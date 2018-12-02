@@ -1,0 +1,112 @@
+@media (max-width: 1199px)
+  .modal
+    &__dialog
+      width: 970px
+    &__left
+      width: 53%
+    &__right
+      width: 46%
+      padding: 20px 40px
+    &__subtitle
+      &-tel
+        width: 70%
+
+@media (max-width: 992px)
+  .modal
+    &__dialog
+      width: 767px
+    &__left
+      min-width: 55%
+      padding: 20px 20px
+    &__rooms
+      height: 100%
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+    &__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__img
+      margin-right: 0
+    &__line
+      &_yellow
+        margin-left: auto
+        margin-right: auto
+    &__labor
+      display: none
+  .button
+    &__none
+      display: none
+
+@media (max-width: 768px)
+  .modal
+    &__dialog
+      width: 577px
+      display: flex
+      flex-direction: column
+    &__left
+      order: 2
+      height: 40%
+      width: 100%
+    &__descr
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+    &__rooms
+      display: flex
+      flex-direction: row
+    &__right
+      order: 1
+      height: 60%
+      width: 100% 
+    &__title
+      &-tel
+        margin-bottom: 10px
+        width: 100%
+    &__subtitle
+      &-tel
+        margin-bottom: 10px
+    &__input
+      width: 95%
+    &__button
+      width: 95%
+    &__footer
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 65%
+    &__wrap
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+@media (max-width: 576px)
+  .modal
+    &__dialog
+      width: 100%
+    &__left
+      display: none
+    &__right
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+    &__wrap
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+    &__input
+      width: 100%
+    &__button
+      width: 100%
+      font-size: 14px
+    &__footer
+      &-text
+        width: 100%
+      &-tel
+        font-size: 16px
