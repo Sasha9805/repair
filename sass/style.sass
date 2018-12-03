@@ -8,6 +8,7 @@
 @import 'main'
 @import 'feedback'
 @import 'modal'
+@import 'portfolio'
 
 *, *:after, *:before
   box-sizing: border-box
@@ -32,6 +33,13 @@ ul
 li
   line-height: 25px
   font-size: 14px
+
+.section
+  &-title
+    +bold
+    line-height: 45px
+    &_center
+      text-align: center
 
 
 @import 'media'
