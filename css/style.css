@@ -617,6 +617,24 @@ template {
   display: none;
 }
 
+.modal__success {
+  width: 770px;
+  height: 550px;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-size: 22px;
+}
+
 .modal_visible {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,6 +850,135 @@ template {
   background-size: 100%;
 }
 
+.callback {
+  padding: 106px 0;
+  background: url("../img/callback/callback-bg.jpg") no-repeat center left 700px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.callback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #ffc000;
+  position: absolute;
+  z-index: -1;
+}
+
+.callback__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.callback__questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.callback__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  width: 515px;
+}
+
+.callback__subtitle {
+  width: 305px;
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+
+.callback__item {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.callback__number {
+  margin-right: 32px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.callback__number-1 {
+  padding: 12px 12px 13px 13px;
+}
+
+.callback__number-2 {
+  padding: 11px 11px 13px 13px;
+}
+
+.callback__number-3 {
+  padding: 12px 11px 12px 13px;
+}
+
+.callback__number-4 {
+  padding: 12px 10px 13px 13px;
+}
+
+.callback__descr {
+  font-family: "Museo Sans Medium", sans-serif;
+}
+
+.callback__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  width: 370px;
+  margin-left: 280px;
+}
+
+.callback__form-title {
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.callback__form-subtitle {
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+
+.callback__form-input {
+  width: 370px;
+  margin-right: 0;
+}
+
+.callback__form-button {
+  margin-bottom: 33px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -880,6 +1027,9 @@ li {
   .slider__item img {
     max-width: 95%;
   }
+  .callback__form {
+    margin-left: 65px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -896,6 +1046,39 @@ li {
   .feedback {
     text-align: center;
     background: #fff;
+  }
+  .callback {
+    paddingt: 0;
+    background: none;
+  }
+  .callback:before {
+    width: 60%;
+  }
+  .callback__questions {
+    margin-left: 5px;
+  }
+  .callback__title {
+    width: 450px;
+  }
+  .callback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 35px;
+  }
+  .callback__form-input {
+    width: 90%;
+    margin-right: 0 !important;
+  }
+  .callback__form-button {
+    margin-left: 15px;
+    width: 90%;
   }
 }
 
@@ -956,6 +1139,33 @@ li {
   }
   .section-title {
     font-size: 20px;
+  }
+  .callback:before {
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #ffc000;
+  }
+  .callback__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .callback__questions {
+    background-color: #ffc000;
+  }
+  .callback__form-button {
+    margin: 0 auto;
+    margin-bottom: 33px;
   }
 }
 
@@ -1021,6 +1231,64 @@ li {
   .form__contacts:before {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  .callback {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .callback:before {
+    height: 50%;
+  }
+  .callback__questions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .callback__title {
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .callback__subtitle {
+    margin-bottom: 20px;
+  }
+  .callback__item {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  .callback__form {
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .callback__form-title {
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .callback__form-subtitle {
+    margin-bottom: 20px;
+  }
+  .callback__form-input {
+    width: 80%;
+  }
+  .callback__form-button {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+  .callback__form__footer {
+    width: 300px;
   }
 }
 

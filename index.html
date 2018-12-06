@@ -77,13 +77,23 @@
   <section class="feedback">
     <div class="container">
       <div class="form">
-        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект &nbsp;Вашего жилья и реализуем его!</h2>
+        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект&nbsp;Вашего жилья и реализуем его!</h2>
         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-        <form action="#">
-          <input type="text" class="form__input input input-name" placeholder="Ваше имя">
-          <input type="tel" class="form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра." pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}">
+
+        <!-- Форма без jQuery плагина валидации -->
+        <!-- <form action="mailer/smart.php" class="js-ajax-fb" method="POST">
+          <input type="text" name="full-name-fb" class="form__input input input-name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone-fb" class="form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра." pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required>
+          <button type="submit" class="button form__button">Получить бесплатный дизайн-&nbsp;проект</button>
+        </form> -->
+
+        <!-- Форма для jQuery Validation Plugin -->
+        <form action="mailer/smart.php" class="js-ajax-fb" method="POST">
+          <input type="text" name="full_name_fb" class="form__input input input-name" placeholder="Ваше имя">
+          <input type="tel" name="phone_fb" class="form__input input input-tel" placeholder="Ваш телефон">
           <button type="submit" class="button form__button">Получить бесплатный дизайн-&nbsp;проект</button>
         </form>
+
         <div class="form__manage-team">
           <div class="form__manager">
             Наш менеджер перезвонит Вам в течение 60 секунд
@@ -108,7 +118,7 @@
 
   <div class="modal" id="modal-callback">
     <div class="modal__dialog">
-      <div class="modal__close b-close">&#10006</div>  
+      <div class="modal__close">&#10006</div>  <!-- Для плагина bPopup нужен клас b-popup -->
       <div class="modal__left">
         <div class="modal__rooms">
           <div class="modal__item">
@@ -184,10 +194,20 @@
         </div>
         <div class="modal__wrap">
           <div class="modal__form">
-            <form action="#">
-              <input type="text" class="modal__input form__input input input-name" placeholder="Ваше имя">
-              <input type="tel" class="modal__input form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра."
-                pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}">
+
+            <!-- Форма без jQuery плагина валидации -->
+            <!-- <form action="mailer/smart.php" class="js-ajax-modal" method="POST">
+              <input type="text" name="full-name-modal" class="modal__input form__input input input-name" placeholder="Ваше имя" required>
+              <input type="tel" name="phone-modal" class="modal__input form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+                pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required>
+              <button type="submit" class="button modal__button form__button">Получить <span class="button__none">бесплатный</span>
+                дизайн-&nbsp;проект</button>
+            </form> -->
+
+            <!-- Форма для jQuery Validation Plugin -->
+            <form action="mailer/smart.php" class="js-ajax-modal" method="POST">
+              <input type="text" name="full_name_modal" class="modal__input form__input input input-name" placeholder="Ваше имя">
+              <input type="tel" name="phone_modal" class="modal__input form__input input input-tel" placeholder="Ваш телефон">
               <button type="submit" class="button modal__button form__button">Получить <span class="button__none">бесплатный</span>
                 дизайн-&nbsp;проект</button>
             </form>
@@ -208,10 +228,10 @@
   <!-- Библиотека jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Плагин bPopup -->
-  <script src="js/jquery.bpopup.min.js"></script>
+  <!-- <script src="js/jquery.bpopup.min.js"></script> -->
 
   <!-- Скрипт с помощью bPopup -->
-  <script>
+  <!-- <script>
     ;(function($) {
       $(document).ready(function () {
             $('#button-callback').bind('click', function (e) {
@@ -220,12 +240,12 @@
                 positionStyle: 'fixed'
               });
             });
-          });
+      });
     })(jQuery);
-  </script>
+  </script> -->
   
   <!-- С помощью jQuery -->
-  <!-- <script>
+  <script>
     $(document).ready(function () {
       $('#button-callback').on('click', function() {
         // console.log('Вы нажали на кнопку');
@@ -235,7 +255,7 @@
         $('#modal-callback').toggleClass('modal_visible');
       });
     });
-  </script> -->
+  </script>
 
   <!-- С помощью JS -->
   <!-- <script>
@@ -350,6 +370,284 @@
         });
       });
   </script> -->
+
+  <section class="callback">
+    <div class="container">
+      <div class="callback__wrap">
+        <div class="callback__questions">
+          <h3 class="callback__title">
+            Мы можем озвучить Вам примерную стоимость работы и материалов по телефону
+          </h3>
+          <div class="callback__subtitle">
+            Для этого нужно ответить на 4 вопроса:
+          </div>
+          <div class="callback__list">
+            <div class="callback__item">
+              <div class="callback__number  callback__number-1">
+                1.
+              </div>
+              <div class="callback__descr">
+                Какова площадь помещения?
+              </div>
+            </div>
+
+            <div class="callback__item">
+              <div class="callback__number  callback__number-2">
+                2.
+              </div>
+              <div class="callback__descr">
+                У Вас новостройка или вторичное жилье?
+              </div>
+            </div>
+
+            <div class="callback__item">
+              <div class="callback__number callback__number-3">
+                3.
+              </div>
+              <div class="callback__descr">
+                Где находится помещение, в котором будет производиться ремонт?
+              </div>
+            </div>
+
+            <div class="callback__item">
+              <div class="callback__number  callback__number-4">
+                4.
+              </div>
+              <div class="callback__descr">
+                Назначение помещения?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callback__form">
+          <h3 class="callback__form-title">
+            Оставьте заявку на бесплатный расчет ремонта по телефону
+          </h3>
+          <div class="callback__form-subtitle callback__subtitle_center">
+            Для этого заполните форму ниже
+          </div>
+
+          <!-- Форма без jQuery плагина валидации -->
+          <!-- <form action="mailer/smart.php" class="js-ajax-cb" method="POST">
+            <input type="text" name="full-name-cb" class="callback__form-input form__input input input-name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone-cb" class="callback__form-input form__input input input-tel" placeholder="Ваш телефон" title="Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+              pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required>
+            <button type="submit" class="button callback__form-button form__button">Рассчитать стоимость</button>
+          </form> -->
+
+          <!-- Форма для jQuery Validation Plugin -->
+          <form action="mailer/smart.php" class="js-ajax-cb" method="POST">
+            <input type="text" name="full_name_cb" class="callback__form-input form__input input input-name" placeholder="Ваше имя">
+            <input type="tel" name="phone_cb" class="callback__form-input form__input input input-tel" placeholder="Ваш телефон">
+            <button type="submit" class="button callback__form-button form__button">Рассчитать стоимость</button>
+          </form>
+          
+          <div class="callback__form-footer">
+            Мы перезвоним Вам в течение 60 секунд
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal-test">
+    <div class="modal__success">
+      <div class="modal__close">&#10006</div>
+      Ваше сообщение успешно отправлено
+    </div>
+  </div>
+
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      // Добавляем метод проверки корректного ввода телефона
+      jQuery.validator.addMethod("phone", function (phone_number, element) {
+        phone_number = phone_number.replace(/\s+/g, "");
+        return this.optional(element) || phone_number.length > 11 &&
+        phone_number.match(/^(\+7[\-])(\d{3}[\-])(\d{2}[\-])(\d{2}[\-])(\d{3})$/);
+      }, "Номер в формате +7-999-99-99-999, где 9 – любая цифра.");
+
+      jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+      });
+
+      var form_fb = $('.js-ajax-fb');
+      var form_modal = $('.js-ajax-modal');
+      var form_cb = $('.js-ajax-cb');
+
+      // Форма feedback
+      form_fb.validate({
+        rules: {
+          full_name_fb: {
+            required: true,
+            minlength: 2,
+          },
+          phone_fb: {
+            required: true,
+            phone: true
+          }
+        },
+        messages: {
+          full_name_fb: {
+            required: "Введите ваше имя",
+            minlength: "Ваше имя должно быть не менее 2 символов"
+          },
+          phone_fb: {
+            required: "Введите ваш номер телефона",
+            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+          }
+        }
+      });
+
+      form_fb.on('submit', function () {
+
+        var nameVal = $('[name = full_name_fb]').val(),
+            phoneVal = $('[name = phone_fb]').val();
+
+        if (form_fb.valid()) {
+
+          event.preventDefault();
+
+          //  Если всё введено правильно, то отправляем письмо
+          $.ajax({
+            url: "mailer/smart.php",
+            data: { name: nameVal, phone: phoneVal }
+            // data: $(this).serialize()
+          }).done(function () {
+            $(this).find("input").val("");
+            // alert("Ваше сообщение успешно отправлено");
+
+            $('#modal-callback').removeClass('modal_visible');
+            $('#modal-test').addClass('modal_visible');
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').removeClass('modal_visible');
+              $('#modal-test').removeClass('modal_visible');
+            });
+
+            form_fb.trigger('reset');
+          });
+          return false;
+        }; 
+      });
+
+      // Форма модального окна modal
+      form_modal.validate({
+        rules: {
+          full_name_modal: {
+            required: true,
+            minlength: 2,
+          },
+          phone_modal: {
+            required: true,
+            phone: true
+          }
+        },
+        messages: {
+          full_name_modal: {
+            required: "Введите ваше имя",
+            minlength: "Ваше имя должно быть не менее 2 символов"
+          },
+          phone_modal: {
+            required: "Введите ваш номер телефона",
+            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+          }
+        }
+      });
+
+      form_modal.on('submit', function () {
+
+        var nameVal = $('[name = full_name_modal]').val(),
+            phoneVal = $('[name = phone_modal]').val();
+
+
+        //  Если всё введено правильно, то отправляем письмо
+        if (form_modal.valid()){
+
+          event.preventDefault();
+
+          $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: { name: nameVal, phone: phoneVal }
+            // data: $(this).serialize()
+          }).done(function () {
+            $(this).find("input").val("");
+            // alert("Ваше сообщение успешно отправлено");
+
+            $('#modal-callback').removeClass('modal_visible');
+            $('#modal-test').addClass('modal_visible');
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').removeClass('modal_visible');
+              $('#modal-test').removeClass('modal_visible');
+            });
+            
+            form_modal.trigger('reset');
+          });
+          return false;
+        };
+      });
+
+      // Форма callback
+      form_cb.validate({
+        rules: {
+          full_name_cb: {
+            required: true,
+            minlength: 2,
+          },
+          phone_cb: {
+            required: true,
+            phone: true
+          }
+        },
+        messages: {
+          full_name_cb: {
+            required: "Введите ваше имя",
+            minlength: "Ваше имя должно быть не менее 2 символов"
+          },
+          phone_cb: {
+            required: "Введите ваш номер телефона",
+            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+          }
+        }
+      });
+
+      form_cb.on('submit', function (event) {
+
+        var nameVal = $('[name = full_name_cb]').val(),
+        phoneVal = $('[name = phone_cb]').val();
+
+        // Если всё введено правильно, то отправляем письмо
+        if (form_cb.valid()){
+
+          event.preventDefault();
+
+          $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: { name: nameVal, phone: phoneVal }
+            // data: $(this).serialize()
+          }).done(function () {
+            $(this).find("input").val("");
+            // alert("Ваше сообщение успешно отправлено");
+
+            $('#modal-callback').removeClass('modal_visible');
+            $('#modal-test').addClass('modal_visible');
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').removeClass('modal_visible');
+              $('#modal-test').removeClass('modal_visible');
+            });
+
+            form_cb.trigger('reset');
+          });
+        };
+        return false;
+      });
+    });
+  </script>
 
 </body>
 </html>

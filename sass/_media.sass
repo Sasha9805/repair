@@ -5,6 +5,9 @@
     &__item
       img
         max-width: 95%
+  .callback
+    &__form
+      margin-left: 65px
 
 @media (max-width: 992px)
   .form
@@ -19,6 +22,27 @@
   .feedback
     text-align: center
     background: #fff
+
+  .callback
+    paddingt: 0
+    background: none
+    &:before
+      width: 60%
+    &__questions
+      margin-left: 5px
+    &__title
+      width: 450px
+    &__form
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-left: 35px
+      &-input
+        width: 90%
+        margin-right: 0 !important
+      &-button
+        margin-left: 15px
+        width: 90%
 @media (max-width: 768px)
   .hidden-xs
     display: none
@@ -53,6 +77,25 @@
   .section
     &-title
       font-size: 20px
+
+  .callback
+    &:before
+      content: ''
+      left: 0
+      top: 0
+      width: 100%
+      height: 50%
+      background-color: #ffc000
+    &__wrap
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__questions
+      background-color: #ffc000
+    &__form
+      &-button
+        margin: 0 auto
+        margin-bottom: 33px
 @media (max-width: 576px)
   .header
     &-text
@@ -83,3 +126,41 @@
       &:before
         margin-right: 0
         margin-bottom: 10px
+
+  .callback
+    width: 100%
+    justify-content: space-between
+    &:before
+      height: 50%
+    &__questions
+      display: flex
+      flex-direction: column
+      width: 100% 
+    &__title
+      text-align: center
+      width: 300px
+      font-size: 20px
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 20px
+    &__item
+      width: 300px
+      margin-bottom: 25px
+    &__form
+      width: 100%
+      margin-left: 0
+      align-items: center
+      &-title
+        width: 300px
+        font-size: 20px
+        margin-bottom: 20px
+      &-subtitle
+        margin-bottom: 20px
+      &-input
+        width: 80%
+      &-button
+        width: 80%
+        margin: 0 auto
+        margin-bottom: 33px
+      &__footer
+        width: 300px

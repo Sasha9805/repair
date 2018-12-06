@@ -1,0 +1,72 @@
+.callback
+  padding: 106px 0
+  background: url('../img/callback/callback-bg.jpg') no-repeat center left 700px
+  background-size: contain
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    width: 55%
+    height: 100%
+    background-color: #ffc000
+    position: absolute
+    z-index: -1
+  &__wrap
+    display: flex
+    flex-direction: row
+  &__questions
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+  &__title
+    margin-bottom: 50px
+    font-size: 22px
+    width: 515px
+  &__subtitle
+    width: 305px
+    margin-bottom: 95px
+    font-size: 16px
+  &__list
+  &__item
+    width: 450px
+    display: flex
+    align-items: center
+    margin-bottom: 26px
+  &__number
+    &-1
+      padding: 12px 12px 13px 13px
+    &-2
+      padding: 11px 11px 13px 13px
+    &-3
+      padding: 12px 11px 12px 13px
+    &-4
+      padding: 12px 10px 13px 13px
+    margin-right: 32px
+    border: 2px solid #000000
+    border-radius: 50%
+    +bold
+    font-size: 14px
+    font-weight: 400  
+  &__descr
+    +semibold 
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    text-align: center
+    width: 370px
+    margin-left: 280px
+    &-title
+      margin-bottom: 50px
+      font-size: 22px
+      // width: 336px
+    &-subtitle
+      margin-bottom: 95px
+      font-size: 16px
+    &-input
+      width: 370px
+      margin-right: 0
+    &-button
+      margin-bottom: 33px
