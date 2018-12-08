@@ -19,39 +19,41 @@
     justify-content: center
     align-items: flex-start
 .step
-    // border: 1px solid black
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
-    margin-top: 11px
+  // border: 1px solid black
+  visibility: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin-top: 11px
+  margin-bottom: 30px
+  max-width: 150px
+  &__img
     margin-bottom: 30px
-    max-width: 150px
-    &__img
-      margin-bottom: 30px
-      min-width: 100px
-      height: 100px
-      border-radius: 50%
-      border: 3px solid $primary-color
-      background-size: 40px
-      background-repeat: no-repeat
-      background-position: center
-      &-1
-        background-image: url(../img/price/experts/step-1.png)
-      &-2
-        background-image: url(../img/price/experts/step-2.png)
-      &-3
-        background-image: url(../img/price/experts/step-3.png)
-      &-4
-        background-image: url(../img/price/experts/step-4.png)
-      &-5
-        background-image: url(../img/price/experts/step-5.png)
-    &__text
-      font-size: 14px
-      width: 155px
-      line-height: 20px
-      text-align: center
+    min-width: 100px
+    height: 100px
+    border-radius: 50%
+    border: 3px solid $primary-color
+    background-size: 40px
+    background-repeat: no-repeat
+    background-position: center
+    &-1
+      background-image: url(../img/price/experts/step-1.png)
+    &-2
+      background-image: url(../img/price/experts/step-2.png)
+    &-3
+      background-image: url(../img/price/experts/step-3.png)
+    &-4
+      background-image: url(../img/price/experts/step-4.png)
+    &-5
+      background-image: url(../img/price/experts/step-5.png)
+  &__text
+    font-size: 14px
+    width: 155px
+    line-height: 20px
+    text-align: center
 .card
+  visibility: hidden
   max-width: 370px
   min-height: 410px
   text-align: center
@@ -96,7 +98,130 @@
       position: absolute  
       bottom: -3px
       transition: 0.2s ease
+    &:hover
       &:after
         height: 13px
         z-index: -1
-  
+.animate
+  &-fade
+    &_1
+      visibility: visible
+      animation-name: fade 
+      animation-duration: 1s
+      animation-delay: 0.2s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_2
+      visibility: visible
+      animation-name: fade
+      animation-duration: 1s 
+      animation-delay: 0.4s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_3
+      visibility: visible
+      animation-name: fade
+      animation-duration: 1s 
+      animation-delay: 0.6s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+  &-flip
+    &_1
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 0.2s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_2
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 0.4s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_3
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 0.6s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_4
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 0.8s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_5
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 1s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_6
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 1.2s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_7
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 1.4s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_8
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 1.6s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_9
+      visibility: visible
+      animation-name: flipX
+      animation-duration: 1s
+      animation-delay: 1.8s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+  &-speed
+    &_1
+      visibility: visible
+      animation-name: speed
+      animation-duration: 1s
+      animation-delay: 0.2s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_2
+      visibility: visible
+      animation-name: speed
+      animation-duration: 1s
+      animation-delay: 0.4s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_3
+      visibility: visible
+      animation-name: speed
+      animation-duration: 1s
+      animation-delay: 0.6s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_4
+      visibility: visible
+      animation-name: speed
+      animation-duration: 1s
+      animation-delay: 0.8s
+      animation-direction: alternate
+      animation-fill-mode: backwards
+    &_5
+      visibility: visible
+      animation-name: speed
+      animation-duration: 1s
+      animation-delay: 1s
+      animation-direction: alternate
+      animation-fill-mode: backwards

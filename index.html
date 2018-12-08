@@ -380,7 +380,9 @@
       <h3 class="section-subtitle price__subtitle">Прайс на наши услуги</h3>
       <!-- /.section-subtitle -->
       <div class="price-wrap">
-        <div class="card wow fadeInUp" data-wow-delay="0.2s">
+
+        <!-- С помощью Wow.js и animate.css -->
+        <!-- <div class="card wow fadeInUp" data-wow-delay="0.2s">
           <div class="card__img-wrap">
             <img src="img/price/price-1.jpg" alt="" class="card__img">
           </div>
@@ -421,8 +423,92 @@
           </div>
           <h4 class="card__title">Ремонт дач и коттеджей</h4>
           <a href="#" class="card__link">Узнать цены</a>
-        </div> 
+        </div>  -->
+        <div class="card card-1">
+          <div class="card__img-wrap">
+            <img src="img/price/price-1.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card card-2">
+          <div class="card__img-wrap">
+            <img src="img/price/price-2.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт комнат и квартир</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card card-3">
+          <div class="card__img-wrap">
+            <img src="img/price/price-3.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Отделка офисных помещений</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card card-4">
+          <div class="card__img-wrap">
+            <img src="img/price/price-4.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт в новостройках</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card card-5">
+          <div class="card__img-wrap">
+            <img src="img/price/price-5.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт кухонь</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card card-6">
+          <div class="card__img-wrap">
+            <img src="img/price/price-6.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт дач и коттеджей</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
       </div>
+
+      <script src="js/jquery.viewportchecker.min.js"></script>
+      <script>
+        
+        $(document).ready(function() {
+          $('.card-1').viewportChecker({
+            classToAdd: 'animate-fade_1',
+            offset: 100
+          });
+          $('.card-2').viewportChecker({
+            classToAdd: 'animate-fade_2',
+            offset: 100
+          });
+          $('.card-3').viewportChecker({
+            classToAdd: 'animate-fade_3',
+            offset: 100
+          });
+          $('.card-4').viewportChecker({
+            classToAdd: 'animate-fade_1',
+            offset: 100
+          });
+          $('.card-5').viewportChecker({
+            classToAdd: 'animate-fade_2',
+            offset: 100
+          }); 
+          $('.card-6').viewportChecker({
+            classToAdd: 'animate-fade_3',
+            offset: 100
+          });
+          // $(window).scroll(function () {
+          //   if ($('.price-wrap').scrollTop() == 0) {
+          //     $('.card-1').addClass('animate-fade_1');
+          //     $('.card-2').addClass('animate-fade_2');
+          //     $('.card-3').addClass('animate-fade_3');
+          //     $('.card-4').addClass('animate-fade_1');
+          //     $('.card-5').addClass('animate-fade_2');
+          //     $('.card-6').addClass('animate-fade_3');
+          //     // создаем эффекты и анимацию
+          //   }
+          // })
+        })
+      </script>
 
       <h2 class="section-title_center section-title price__title">Наши специалисты готовы выехать на замер
       в любое удобное для Вас время</h2>
@@ -430,7 +516,8 @@
       <h3 class="section-subtitle price__subtitle">5 шагов до ремонта</h3>
       <!-- /.section-subtitle -->
       <div class="price-experts">
-        <div class="step wow flipInX" data-wow-delay="0.2s">
+        <!-- С помощью Wow.js и animate.css -->
+        <!-- <div class="step wow flipInX" data-wow-delay="0.2s">
           <div class="step__img step__img-1">
         
           </div>
@@ -489,9 +576,110 @@
           <div class="step__text ">
             Выполняем ремонт в указанные сроки
           </div>
+        </div> -->
+        <div class="step step-1">
+          <div class="step__img step__img-1">
+        
+          </div>
+          <div class="step__text">
+            Вы звоните нам<br>или оставляете заявку
+          </div>
+        </div>
+        
+        <div class="step__arrow step__arrow-1">
+          <img src="img/price/experts/arrow.png" alt="">
+        </div>
+        
+        <div class="step step-2">
+          <div class="step__img step__img-2">
+        
+          </div>
+          <div class="step__text ">
+            Согласуем удобное для Вас время выезда специалиста на замер
+          </div>
+        </div>
+        
+        <div class="step__arrow step__arrow-2">
+          <img src="img/price/experts/arrow.png" alt="">
+        </div>
+        
+        <div class="step step-3">
+          <div class="step__img step__img-3">
+        
+          </div>
+          <div class="step__text ">
+            Рассчитываем смету<br>согласовываем<br>с Вами
+          </div>
+        </div>
+        
+        <div class="step__arrow step__arrow-3">
+          <img src="img/price/experts/arrow.png" alt="">
+        </div>
+        
+        <div class="step step-4">
+          <div class="step__img step__img-4">
+        
+          </div>
+          <div class="step__text ">
+            Подписываем договор<br>закупаем материал<br>по оптовым ценам
+          </div>
+        </div>
+        
+        <div class="step__arrow step__arrow-4">
+          <img src="img/price/experts/arrow.png" alt="">
+        </div>
+        
+        <div class="step step-5">
+          <div class="step__img step__img-5">
+        
+          </div>
+          <div class="step__text ">
+            Выполняем ремонт в указанные сроки
+          </div>
         </div>
         
       </div>
+
+      <script>
+        $(document).ready(function () {
+            $('.step-1').viewportChecker({
+              classToAdd: 'animate-flip_1',
+              offset: 100
+            });
+            $('.step__arrow-1').viewportChecker({
+              classToAdd: 'animate-flip_2',
+              offset: 100
+            });
+            $('.step-2').viewportChecker({
+              classToAdd: 'animate-flip_3',
+              offset: 100
+            });
+            $('.step__arrow-2').viewportChecker({
+              classToAdd: 'animate-flip_4',
+              offset: 100
+            });
+            $('.step-3').viewportChecker({
+              classToAdd: 'animate-flip_5',
+              offset: 100
+            });
+            $('.step__arrow-3').viewportChecker({
+              classToAdd: 'animate-flip_6',
+              offset: 100
+            });
+            $('.step-4').viewportChecker({
+              classToAdd: 'animate-flip_7',
+              offset: 100
+            });
+            $('.step__arrow-4').viewportChecker({
+              classToAdd: 'animate-flip_8',
+              offset: 100
+            });
+            $('.step-5').viewportChecker({
+              classToAdd: 'animate-flip_9',
+              offset: 100
+            })
+        })
+      </script>
 
     </div>
     <!-- /.container -->
@@ -507,10 +695,11 @@
     </div>
   </section>
 
-  <script src="js/wow.min.js"></script>
+  <!-- ПОДКЛЮЧЕНИЕ wow.js -->
+  <!-- <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
-  </script>
+  </script> -->
 
   <section class="callback">
     <div class="container">
@@ -562,10 +751,18 @@
         </div>
 
         <div class="callback__form">
-          <h3 class="callback__form-title wow lightSpeedIn" data-wow-delay="0.1s">
+          <!-- С помощью Wow.js и animate.css -->
+          <!-- <h3 class="callback__form-title wow lightSpeedIn" data-wow-delay="0.1s">
             Оставьте заявку на бесплатный расчет ремонта по телефону
           </h3>
           <div class="callback__form-subtitle callback__subtitle_center wow lightSpeedIn" data-wow-delay="0.2s">
+            Для этого заполните форму ниже
+          </div> -->
+
+          <h3 class="callback__form-title">
+            Оставьте заявку на бесплатный расчет ремонта по телефону
+          </h3>
+          <div class="callback__form-subtitle callback__subtitle_center">
             Для этого заполните форму ниже
           </div>
 
@@ -577,20 +774,59 @@
             <button type="submit" class="button callback__form-button form__button">Рассчитать стоимость</button>
           </form> -->
 
-          <!-- Форма для jQuery Validation Plugin -->
-          <form action="mailer/smart.php" class="js-ajax-cb" method="POST">
+          <!-- Форма для jQuery Validation Plugin и анимацией с wow и animate -->
+          <!-- <form action="mailer/smart.php" class="js-ajax-cb" method="POST">
             <input data-wow-delay="0.3s" type="text" name="full_name_cb" class="callback__form-input form__input input input-name wow lightSpeedIn" placeholder="Ваше имя">
             <input data-wow-delay="0.4s" type="tel" name="phone_cb" class="callback__form-input form__input input input-tel wow lightSpeedIn" placeholder="Ваш телефон">
             <button data-wow-delay="0.5s" type="submit" class="button callback__form-button form__button wow lightSpeedIn">Рассчитать стоимость</button>
+          </form> -->
+
+          <!-- Форма для jQuery Validation Plugin и анимацией -->
+          <form action="mailer/smart.php" class="js-ajax-cb" method="POST">
+            <input type="text" name="full_name_cb" class="callback__form-input form__input input input-name"
+              placeholder="Ваше имя">
+            <input type="tel" name="phone_cb" class="callback__form-input form__input input input-tel"
+              placeholder="Ваш телефон">
+            <button type="submit" class="button callback__form-button form__button">Рассчитать
+              стоимость</button>
           </form>
           
-          <div class="callback__form-footer wow lightSpeedIn" data-wow-delay="0.6s">
+          <!-- С помощью Wow.js и animate.css -->
+          <!-- <div class="callback__form-footer wow lightSpeedIn" data-wow-delay="0.6s">
+            Мы перезвоним Вам в течение 60 секунд
+          </div> -->
+          <div class="callback__form-footer">
             Мы перезвоним Вам в течение 60 секунд
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    $(document).ready(function () {
+        $('.callback__form-title').viewportChecker({
+          classToAdd: 'animate-speed_1',
+          offset: 100
+        });
+        $('.callback__form-subtitle').viewportChecker({
+          classToAdd: 'animate-speed_2',
+          offset: 100
+        });
+        $('.callback__form-input').viewportChecker({
+          classToAdd: 'animate-speed_3',
+          offset: 100
+        });
+        $('.callback__form-button').viewportChecker({
+          classToAdd: 'animate-speed_4',
+          offset: 100
+        });
+        $('.callback__form-footer').viewportChecker({
+          classToAdd: 'animate-speed_5',
+          offset: 100
+        });
+      })
+  </script>
 
   <div class="modal" id="modal-test">
     <div class="modal__success">
