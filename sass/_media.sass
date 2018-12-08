@@ -43,6 +43,14 @@
       &-button
         margin-left: 15px
         width: 90%
+
+  .price
+    &-experts
+      flex-wrap: wrap
+      justify-content: space-between
+  .step
+    &__arrow
+      display: none
 @media (max-width: 768px)
   .hidden-xs
     display: none
@@ -96,6 +104,17 @@
       &-button
         margin: 0 auto
         margin-bottom: 33px
+
+  .price
+    &-experts
+      justify-content: space-around
+  .step
+    min-width: 50%
+
+  .text
+    &__title
+      font-size: 18px
+      +semibold
 @media (max-width: 576px)
   .header
     &-text
@@ -164,3 +183,14 @@
         margin-bottom: 33px
       &__footer
         width: 300px
+
+  .price
+    &-experts
+      justify-content: center
+      align-items: center
+      flex-direction: column
+    &__title
+      font-size: 18px
+      width: 80%
+    &__subtitle
+      font-size: 14px
