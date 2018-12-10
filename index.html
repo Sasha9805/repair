@@ -213,7 +213,7 @@
             </form> -->
 
             <!-- Форма для jQuery Validation Plugin -->
-            <form action="mailer/smart.php" class="js-ajax-modal" method="POST">
+            <form action="mailer/smart.php" class="js-ajax-modal" id="modal-form" method="POST">
               <input type="text" name="full_name_modal" class="modal__input form__input input input-name" placeholder="Ваше имя">
               <input type="tel" name="phone_modal" class="modal__input form__input input input-tel" placeholder="Ваш телефон">
               <button type="submit" class="button modal__button form__button">Получить <span class="button__none">бесплатный</span>
@@ -1125,9 +1125,18 @@
     </div>
   </footer>
 
+  <!-- <script>
+    document.querySelector('#button-callback').addEventListener('click', function () {
+        ym(51509990, 'reachGoal', 'btn'); return true;
+    })
+  </script> -->
+    
   <script>
     document.querySelector('#button-callback').addEventListener('click', function() {
-      ym(51509990, 'reachGoal', 'btn'); return true;
+      ym(51509990, 'reachGoal', 'button'); return true;
+    document.querySelector('#modal-form').addEventListener('submit', function() {
+      ym(51509990, 'reachGoal', 'form'); return true;
+    })  
     })
   </script>
 
