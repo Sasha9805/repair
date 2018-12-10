@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/slick.css"> -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=45225956-b927-471f-b960-06e8e1c256f8&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
   <header class="header">
@@ -1025,6 +1027,98 @@
       });
     });
   </script>
+
+  <footer class="footer">
+    <div class="map" id="map">
+      <!-- Яндекс.Карты с помощью конструктора -->
+      <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adad1b7bdb945e9fa69ac90a66e04bbebf03a00dbe9a5a7fb5e0aa2a6e0055711&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> -->
+    </div>
+    <!-- Яндекс.Карты с помощью API -->
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        // Создание карты.    
+        var myMap = new ymaps.Map("map", {
+          // Координаты центра карты.
+          // Порядок по умолчанию: «широта, долгота».
+          center: [55.68419012, 37.41382031],
+          // Уровень масштабирования. Допустимые значения:
+          // от 0 (весь мир) до 19.
+          zoom: 15
+        });
+        // Отключаем скролл колесиком
+        myMap.behaviors.disable('scrollZoom');
+        // Метка по умолчанию
+        var myPlacemark = new ymaps.Placemark([55.68419012, 37.41382031], {
+          hintContent: 'Офис компании',
+          balloonContent: 'Приходите к нам!'
+        });
+        // Собственная метка
+        var myPlacemark1 = new ymaps.Placemark([55.68419012, 37.41382031], {
+          hintContent: 'Офис компании',
+          balloonContent: 'Приходите к нам!'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/footer/pin.png',
+            // Размеры метки.
+            iconImageSize: [64, 64],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-30, -58]
+          });
+        myMap.geoObjects.add(myPlacemark1);
+      }
+    </script>
+    <div class="contacts">
+      <div class="contacts__title">
+        Приезжайте к нам в гости!
+        Проконсультируем Вас<br>
+        по всем вопросам ремонта
+      </div>
+      <div class="contacts__info">
+        <div class="info">
+          <div class="info__image">
+            <img src="img/footer/address.png" alt="">
+          </div>
+          <div class="info__address">
+            г. Москва<br>
+            <span class="info__address_bold">
+              ул. Ленинга, д. 10,
+              корпус 2, оф. 308
+            </span>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="info__image">
+            <img src="img/footer/operation-mode.png" alt="">
+          </div>
+          <div class="info__address">
+            Режим работы:<br>
+            <span class="info__address_bold">
+              с 9:00 до 18:00
+            </span>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="info__image">
+            <img src="img/footer/phone.png" alt="">
+          </div>
+          <div class="info__address">
+            Телефон:<br>
+            <span class="info__address_bold">
+              + 7 (495) 42-251-31
+            </span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

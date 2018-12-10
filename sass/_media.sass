@@ -9,6 +9,8 @@
     &__form
       margin-left: 65px
 
+  .contacts
+    padding-left: 65px
 @media (max-width: 992px)
   .form
     margin: auto
@@ -51,6 +53,20 @@
   .step
     &__arrow
       display: none
+
+  .footer
+    flex-direction: column
+  .map
+    width: 100%
+  .contacts
+    margin: 0 auto
+    &__title
+      margin: 20px auto
+    &__info
+      display: flex
+      flex-direction: row
+  .info
+    margin-right: 40px
 @media (max-width: 768px)
   .hidden-xs
     display: none
@@ -115,6 +131,12 @@
     &__title
       font-size: 18px
       +semibold
+
+  .contacts
+    &__info
+      flex-direction: column
+  .info
+    margin-right: 0
 @media (max-width: 576px)
   .header
     &-text
@@ -194,3 +216,11 @@
       width: 80%
     &__subtitle
       font-size: 14px
+
+  .map
+    order: 2
+  .contacts
+    order: 1
+    padding-top: 0
+    &__title
+      font-size: 18px

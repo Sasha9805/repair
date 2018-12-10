@@ -1532,6 +1532,56 @@ template {
   }
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  width: 55%;
+  min-height: 640px;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-top: 100px;
+  padding-left: 134px;
+}
+
+.contacts__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  margin-bottom: 100px;
+  max-width: 295px;
+  line-height: 33px;
+  font-size: 22px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+.info__image {
+  min-height: 20px;
+  min-width: 20px;
+  margin-right: 21px;
+}
+
+.info__address {
+  line-height: 26px;
+  font-size: 16px;
+  max-width: 147px;
+}
+
+.info__address_bold {
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1587,6 +1637,9 @@ li {
   }
   .callback__form {
     margin-left: 65px;
+  }
+  .contacts {
+    padding-left: 65px;
   }
 }
 
@@ -1647,6 +1700,33 @@ li {
   }
   .step__arrow {
     display: none;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map {
+    width: 100%;
+  }
+  .contacts {
+    margin: 0 auto;
+  }
+  .contacts__title {
+    margin: 20px auto;
+  }
+  .contacts__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info {
+    margin-right: 40px;
   }
 }
 
@@ -1745,6 +1825,15 @@ li {
   .text__title {
     font-size: 18px;
     font-family: "Museo Sans Medium", sans-serif;
+  }
+  .contacts__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info {
+    margin-right: 0;
   }
 }
 
@@ -1887,6 +1976,20 @@ li {
   }
   .price__subtitle {
     font-size: 14px;
+  }
+  .map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contacts {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-top: 0;
+  }
+  .contacts__title {
+    font-size: 18px;
   }
 }
 
