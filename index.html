@@ -9,15 +9,10 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/slick.css"> -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=45225956-b927-471f-b960-06e8e1c256f8&lang=ru_RU" type="text/javascript">
-    </script>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51509990, "init", { id: 51509990, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/51509990" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript> <!-- Yandex.Metrika counter -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=45225956-b927-471f-b960-06e8e1c256f8&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
+
   <header class="header">
     <div class="container header-wrap">
       <div class="header-logo">
@@ -53,7 +48,6 @@
               </div>
             </div>
             <!-- /.main-advantages__item -->
-
             <div class="main-advantages__item">
               <div class="main-advantages__img main-advantages__img-2">
             
@@ -63,7 +57,6 @@
               </div>
             </div>
             <!-- /.main-advantages__item -->
-
             <div class="main-advantages__item">
               <div class="main-advantages__img main-advantages__img-3">
             
@@ -107,9 +100,6 @@
             Наш менеджер перезвонит Вам в течение 60 секунд
           </div>
           <div class="form__contacts">
-            <!-- <div class="form__img">
-              <img src="img/feedback/phone.png" alt="Телефон">
-            </div> -->
             <div class="form__our-tel">
               <div class="form__text">
                 или перезвоните нам сами
@@ -233,52 +223,6 @@
     </div>
   </div>
 
-  <!-- Библиотека jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Плагин bPopup -->
-  <!-- <script src="js/jquery.bpopup.min.js"></script> -->
-
-  <!-- Скрипт с помощью bPopup -->
-  <!-- <script>
-    ;(function($) {
-      $(document).ready(function () {
-            $('#button-callback').bind('click', function (e) {
-              e.preventDefault();
-              $('#modal-callback').bPopup({
-                positionStyle: 'fixed'
-              });
-            });
-      });
-    })(jQuery);
-  </script> -->
-  
-  <!-- С помощью jQuery -->
-  <script>
-    $(document).ready(function () {
-      $('#button-callback').on('click', function() {
-        // console.log('Вы нажали на кнопку');
-        $('#modal-callback').toggleClass('modal_visible');
-      });
-      $('.modal__close').on('click', function () {
-        $('#modal-callback').toggleClass('modal_visible');
-      });
-    });
-  </script>
-
-  <!-- С помощью JS -->
-  <!-- <script>
-    var button = document.querySelector('#button-callback');
-    var modal = document.querySelector('#modal-callback');
-    var close = document.querySelector('.modal__close');
-    button.addEventListener('click', function () {
-      // console.log('Вы нажали на кнопку');
-      modal.classList.toggle('modal_visible');
-    });
-    close.addEventListener('click', function () {
-        document.querySelector('#modal-callback').classList.toggle('modal_visible');
-    });
-  </script> -->
-
   <section class="portfolio">
     <div class="container">
       <h2 class="section-title section-title_center">
@@ -307,77 +251,6 @@
       </div>
     </div>
   </section>
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
-  <!-- Слайдер с помощью Owl Carousel -->
-  <script src="js/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function () {
-        $(".slider").owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          navText: ['<div class="arrow arrow_left"></div>',
-                    '<div class="arrow arrow_right"></div>'
-          ],
-          items: 3,
-          responsive: {
-            1024: {
-              items: 3,
-              nav: true,
-              loop: true
-            },
-            768: {
-              items: 2,
-              nav: true,
-              loop: true
-            },
-            0: {
-              items: 1,
-              nav: true,
-              loop: true
-            }
-          }
-        });
-    });
-  </script>
-
-  <!-- Слайдер с помощью Slick -->
-  <!-- <script src="js/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-        $('.slider').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          nextArrow: '<div class="arrow arrow_right"></div>',
-          prevArrow: '<div class="arrow arrow_left"></div>',
-          responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-              }
-            },
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
-      });
-  </script> -->
 
   <section class="price">
     <div class="container">
@@ -474,48 +347,6 @@
           <a href="#" class="card__link">Узнать цены</a>
         </div>
       </div>
-
-      <script src="js/jquery.viewportchecker.min.js"></script>
-      <script>
-        
-        $(document).ready(function() {
-          $('.card-1').viewportChecker({
-            classToAdd: 'animate-fade_1',
-            offset: 100
-          });
-          $('.card-2').viewportChecker({
-            classToAdd: 'animate-fade_2',
-            offset: 100
-          });
-          $('.card-3').viewportChecker({
-            classToAdd: 'animate-fade_3',
-            offset: 100
-          });
-          $('.card-4').viewportChecker({
-            classToAdd: 'animate-fade_1',
-            offset: 100
-          });
-          $('.card-5').viewportChecker({
-            classToAdd: 'animate-fade_2',
-            offset: 100
-          }); 
-          $('.card-6').viewportChecker({
-            classToAdd: 'animate-fade_3',
-            offset: 100
-          });
-          // $(window).scroll(function () {
-          //   if ($('.price-wrap').scrollTop() == 0) {
-          //     $('.card-1').addClass('animate-fade_1');
-          //     $('.card-2').addClass('animate-fade_2');
-          //     $('.card-3').addClass('animate-fade_3');
-          //     $('.card-4').addClass('animate-fade_1');
-          //     $('.card-5').addClass('animate-fade_2');
-          //     $('.card-6').addClass('animate-fade_3');
-          //     // создаем эффекты и анимацию
-          //   }
-          // })
-        })
-      </script>
 
       <h2 class="section-title_center section-title price__title">Наши специалисты готовы выехать на замер
       в любое удобное для Вас время</h2>
@@ -646,48 +477,6 @@
         </div>
         
       </div>
-
-      <script>
-        $(document).ready(function () {
-            $('.step-1').viewportChecker({
-              classToAdd: 'animate-flip_1',
-              offset: 100
-            });
-            $('.step__arrow-1').viewportChecker({
-              classToAdd: 'animate-flip_2',
-              offset: 100
-            });
-            $('.step-2').viewportChecker({
-              classToAdd: 'animate-flip_3',
-              offset: 100
-            });
-            $('.step__arrow-2').viewportChecker({
-              classToAdd: 'animate-flip_4',
-              offset: 100
-            });
-            $('.step-3').viewportChecker({
-              classToAdd: 'animate-flip_5',
-              offset: 100
-            });
-            $('.step__arrow-3').viewportChecker({
-              classToAdd: 'animate-flip_6',
-              offset: 100
-            });
-            $('.step-4').viewportChecker({
-              classToAdd: 'animate-flip_7',
-              offset: 100
-            });
-            $('.step__arrow-4').viewportChecker({
-              classToAdd: 'animate-flip_8',
-              offset: 100
-            });
-            $('.step-5').viewportChecker({
-              classToAdd: 'animate-flip_9',
-              offset: 100
-            })
-        })
-      </script>
-
     </div>
     <!-- /.container -->
   </section>
@@ -879,31 +668,7 @@
     </div>
   </section>
 
-  <script>
-    $(document).ready(function () {
-        $('.callback__form-title').viewportChecker({
-          classToAdd: 'animate-speed_1',
-          offset: 100
-        });
-        $('.callback__form-subtitle').viewportChecker({
-          classToAdd: 'animate-speed_2',
-          offset: 100
-        });
-        $('.callback__form-input').viewportChecker({
-          classToAdd: 'animate-speed_3',
-          offset: 100
-        });
-        $('.callback__form-button').viewportChecker({
-          classToAdd: 'animate-speed_4',
-          offset: 100
-        });
-        $('.callback__form-footer').viewportChecker({
-          classToAdd: 'animate-speed_5',
-          offset: 100
-        });
-      })
-  </script>
-
+  <!-- Модальное окно при успешной отправке письма -->
   <div class="modal" id="modal-test">
     <div class="modal__success">
       <div class="modal__close">&#10006</div>
@@ -911,241 +676,12 @@
     </div>
   </div>
 
-  <script src="js/jquery.validate.js"></script>
-  <script src="js/additional-methods.min.js"></script>
-  <script>
-    $(document).ready(function() {
-
-      // Добавляем метод проверки корректного ввода телефона
-      jQuery.validator.addMethod("phone", function (phone_number, element) {
-        phone_number = phone_number.replace(/\s+/g, "");
-        return this.optional(element) || phone_number.length > 11 &&
-        phone_number.match(/^(\+7[\-])(\d{3}[\-])(\d{2}[\-])(\d{2}[\-])(\d{3})$/);
-      }, "Номер в формате +7-999-99-99-999, где 9 – любая цифра.");
-
-      jQuery.validator.setDefaults({
-        debug: true,
-        success: "valid"
-      });
-
-      var form_fb = $('.js-ajax-fb');
-      var form_modal = $('.js-ajax-modal');
-      var form_cb = $('.js-ajax-cb');
-
-      // Форма feedback
-      form_fb.validate({
-        rules: {
-          full_name_fb: {
-            required: true,
-            minlength: 2,
-          },
-          phone_fb: {
-            required: true,
-            phone: true
-          }
-        },
-        messages: {
-          full_name_fb: {
-            required: "Введите ваше имя",
-            minlength: "Ваше имя должно быть не менее 2 символов"
-          },
-          phone_fb: {
-            required: "Введите ваш номер телефона",
-            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
-          }
-        }
-      });
-
-      form_fb.on('submit', function () {
-
-        var nameVal = $('[name = full_name_fb]').val(),
-            phoneVal = $('[name = phone_fb]').val();
-
-        if (form_fb.valid()) {
-
-          event.preventDefault();
-
-          //  Если всё введено правильно, то отправляем письмо
-          $.ajax({
-            url: "mailer/smart.php",
-            data: { name: nameVal, phone: phoneVal }
-            // data: $(this).serialize()
-          }).done(function () {
-            $(this).find("input").val("");
-            // alert("Ваше сообщение успешно отправлено");
-
-            $('#modal-callback').removeClass('modal_visible');
-            $('#modal-test').addClass('modal_visible');
-            $('.modal__close').on('click', function () {
-              $('#modal-callback').removeClass('modal_visible');
-              $('#modal-test').removeClass('modal_visible');
-            });
-
-            form_fb.trigger('reset');
-          });
-          return false;
-        }; 
-      });
-
-      // Форма модального окна modal
-      form_modal.validate({
-        rules: {
-          full_name_modal: {
-            required: true,
-            minlength: 2,
-          },
-          phone_modal: {
-            required: true,
-            phone: true
-          }
-        },
-        messages: {
-          full_name_modal: {
-            required: "Введите ваше имя",
-            minlength: "Ваше имя должно быть не менее 2 символов"
-          },
-          phone_modal: {
-            required: "Введите ваш номер телефона",
-            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
-          }
-        }
-      });
-
-      form_modal.on('submit', function () {
-
-        var nameVal = $('[name = full_name_modal]').val(),
-            phoneVal = $('[name = phone_modal]').val();
-
-
-        //  Если всё введено правильно, то отправляем письмо
-        if (form_modal.valid()){
-
-          event.preventDefault();
-
-          $.ajax({
-            type: "POST",
-            url: "mailer/smart.php",
-            data: { name: nameVal, phone: phoneVal }
-            // data: $(this).serialize()
-          }).done(function () {
-            $(this).find("input").val("");
-            // alert("Ваше сообщение успешно отправлено");
-
-            $('#modal-callback').removeClass('modal_visible');
-            $('#modal-test').addClass('modal_visible');
-            $('.modal__close').on('click', function () {
-              $('#modal-callback').removeClass('modal_visible');
-              $('#modal-test').removeClass('modal_visible');
-            });
-            
-            form_modal.trigger('reset');
-          });
-          return false;
-        };
-      });
-
-      // Форма callback
-      form_cb.validate({
-        rules: {
-          full_name_cb: {
-            required: true,
-            minlength: 2,
-          },
-          phone_cb: {
-            required: true,
-            phone: true
-          }
-        },
-        messages: {
-          full_name_cb: {
-            required: "Введите ваше имя",
-            minlength: "Ваше имя должно быть не менее 2 символов"
-          },
-          phone_cb: {
-            required: "Введите ваш номер телефона",
-            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
-          }
-        }
-      });
-
-      form_cb.on('submit', function (event) {
-
-        var nameVal = $('[name = full_name_cb]').val(),
-        phoneVal = $('[name = phone_cb]').val();
-
-        // Если всё введено правильно, то отправляем письмо
-        if (form_cb.valid()){
-
-          event.preventDefault();
-
-          $.ajax({
-            type: "POST",
-            url: "mailer/smart.php",
-            data: { name: nameVal, phone: phoneVal }
-            // data: $(this).serialize()
-          }).done(function () {
-            $(this).find("input").val("");
-            // alert("Ваше сообщение успешно отправлено");
-
-            $('#modal-callback').removeClass('modal_visible');
-            $('#modal-test').addClass('modal_visible');
-            $('.modal__close').on('click', function () {
-              $('#modal-callback').removeClass('modal_visible');
-              $('#modal-test').removeClass('modal_visible');
-            });
-
-            form_cb.trigger('reset');
-          });
-        };
-        return false;
-      });
-    });
-  </script>
-
   <footer class="footer">
     <div class="map" id="map">
       <!-- Яндекс.Карты с помощью конструктора -->
       <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adad1b7bdb945e9fa69ac90a66e04bbebf03a00dbe9a5a7fb5e0aa2a6e0055711&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> -->
     </div>
-    <!-- Яндекс.Карты с помощью API -->
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-          // Координаты центра карты.
-          // Порядок по умолчанию: «широта, долгота».
-          center: [55.68419012, 37.41382031],
-          // Уровень масштабирования. Допустимые значения:
-          // от 0 (весь мир) до 19.
-          zoom: 15
-        });
-        // Отключаем скролл колесиком
-        myMap.behaviors.disable('scrollZoom');
-        // Метка по умолчанию
-        var myPlacemark = new ymaps.Placemark([55.68419012, 37.41382031], {
-          hintContent: 'Офис компании',
-          balloonContent: 'Приходите к нам!'
-        });
-        // Собственная метка
-        var myPlacemark1 = new ymaps.Placemark([55.68419012, 37.41382031], {
-          hintContent: 'Офис компании',
-          balloonContent: 'Приходите к нам!'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/footer/pin.png',
-            // Размеры метки.
-            iconImageSize: [64, 64],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-30, -58]
-          });
-        myMap.geoObjects.add(myPlacemark1);
-      }
-    </script>
+    
     <div class="contacts">
       <div class="contacts__title">
         Приезжайте к нам в гости!
@@ -1194,6 +730,454 @@
     </div>
   </footer>
 
+  <!-- Библиотека jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- МОДАЛЬНЫЕ ОКНА -->
+  <!-- Плагин bPopup -->
+  <!-- <script src="js/jquery.bpopup.min.js"></script> -->
+  
+  <!-- Скрипт с помощью bPopup -->
+  <!-- <script>
+      ;(function($) {
+        $(document).ready(function () {
+              $('#button-callback').bind('click', function (e) {
+                e.preventDefault();
+                $('#modal-callback').bPopup({
+                  positionStyle: 'fixed'
+                });
+              });
+        });
+      })(jQuery);
+    </script> -->
+  
+  <!-- С помощью jQuery -->
+  <script>
+    $(document).ready(function () {
+      $('#button-callback').on('click', function () {
+        // console.log('Вы нажали на кнопку');
+        $('#modal-callback').toggleClass('modal_visible');
+      });
+      $('.modal__close').on('click', function () {
+        $('#modal-callback').toggleClass('modal_visible');
+      });
+    });
+  </script>
+  
+  <!-- С помощью JS -->
+  <!-- <script>
+      var button = document.querySelector('#button-callback');
+      var modal = document.querySelector('#modal-callback');
+      var close = document.querySelector('.modal__close');
+      button.addEventListener('click', function () {
+        // console.log('Вы нажали на кнопку');
+        modal.classList.toggle('modal_visible');
+      });
+      close.addEventListener('click', function () {
+          document.querySelector('#modal-callback').classList.toggle('modal_visible');
+      });
+    </script> -->
+  
+  <!-- СЛАЙДЕРЫ -->
+  <!-- Слайдер с помощью Owl Carousel -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ['<div class="arrow arrow_left"></div>',
+          '<div class="arrow arrow_right"></div>'
+        ],
+        items: 3,
+        responsive: {
+          1024: {
+            items: 3,
+            nav: true,
+            loop: true
+          },
+          768: {
+            items: 2,
+            nav: true,
+            loop: true
+          },
+          0: {
+            items: 1,
+            nav: true,
+            loop: true
+          }
+        }
+      });
+    });
+  </script>
+  
+  <!-- Слайдер с помощью Slick -->
+  <!-- <script src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+          $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            nextArrow: '<div class="arrow arrow_right"></div>',
+            prevArrow: '<div class="arrow arrow_left"></div>',
+            responsive: [
+              {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+        });
+    </script> -->
+  
+  <!-- Своя собственная анимация -->
+  <script src="js/jquery.viewportchecker.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.card-1').viewportChecker({
+        classToAdd: 'animate-fade_1',
+        offset: 100
+      });
+      $('.card-2').viewportChecker({
+        classToAdd: 'animate-fade_2',
+        offset: 100
+      });
+      $('.card-3').viewportChecker({
+        classToAdd: 'animate-fade_3',
+        offset: 100
+      });
+      $('.card-4').viewportChecker({
+        classToAdd: 'animate-fade_1',
+        offset: 100
+      });
+      $('.card-5').viewportChecker({
+        classToAdd: 'animate-fade_2',
+        offset: 100
+      });
+      $('.card-6').viewportChecker({
+        classToAdd: 'animate-fade_3',
+        offset: 100
+      });
+    })
+  </script>
+  
+  <script>
+    $(document).ready(function () {
+      $('.step-1').viewportChecker({
+        classToAdd: 'animate-flip_1',
+        offset: 100
+      });
+      $('.step__arrow-1').viewportChecker({
+        classToAdd: 'animate-flip_2',
+        offset: 100
+      });
+      $('.step-2').viewportChecker({
+        classToAdd: 'animate-flip_3',
+        offset: 100
+      });
+      $('.step__arrow-2').viewportChecker({
+        classToAdd: 'animate-flip_4',
+        offset: 100
+      });
+      $('.step-3').viewportChecker({
+        classToAdd: 'animate-flip_5',
+        offset: 100
+      });
+      $('.step__arrow-3').viewportChecker({
+        classToAdd: 'animate-flip_6',
+        offset: 100
+      });
+      $('.step-4').viewportChecker({
+        classToAdd: 'animate-flip_7',
+        offset: 100
+      });
+      $('.step__arrow-4').viewportChecker({
+        classToAdd: 'animate-flip_8',
+        offset: 100
+      });
+      $('.step-5').viewportChecker({
+        classToAdd: 'animate-flip_9',
+        offset: 100
+      })
+    })
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.callback__form-title').viewportChecker({
+        classToAdd: 'animate-speed_1',
+        offset: 100
+      });
+      $('.callback__form-subtitle').viewportChecker({
+        classToAdd: 'animate-speed_2',
+        offset: 100
+      });
+      $('.callback__form-input').viewportChecker({
+        classToAdd: 'animate-speed_3',
+        offset: 100
+      });
+      $('.callback__form-button').viewportChecker({
+        classToAdd: 'animate-speed_4',
+        offset: 100
+      });
+      $('.callback__form-footer').viewportChecker({
+        classToAdd: 'animate-speed_5',
+        offset: 100
+      });
+    })
+  </script>
+
+  <!-- Валидация формы и отправка сообщения на почту -->
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      // Добавляем метод проверки корректного ввода телефона
+      jQuery.validator.addMethod("phone", function (phone_number, element) {
+        phone_number = phone_number.replace(/\s+/g, "");
+        return this.optional(element) || phone_number.length > 11 &&
+          phone_number.match(/^(\+7[\-])(\d{3}[\-])(\d{2}[\-])(\d{2}[\-])(\d{3})$/);
+      }, "Номер в формате +7-999-99-99-999, где 9 – любая цифра.");
+
+      jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+      });
+
+      var form_fb = $('.js-ajax-fb');
+      var form_modal = $('.js-ajax-modal');
+      var form_cb = $('.js-ajax-cb');
+
+      // Форма feedback
+      form_fb.validate({
+        rules: {
+          full_name_fb: {
+            required: true,
+            minlength: 2,
+          },
+          phone_fb: {
+            required: true,
+            phone: true
+          }
+        },
+        messages: {
+          full_name_fb: {
+            required: "Введите ваше имя",
+            minlength: "Ваше имя должно быть не менее 2 символов"
+          },
+          phone_fb: {
+            required: "Введите ваш номер телефона",
+            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+          }
+        }
+      });
+
+      form_fb.on('submit', function () {
+
+        var nameVal = $('[name = full_name_fb]').val(),
+          phoneVal = $('[name = phone_fb]').val();
+
+        if (form_fb.valid()) {
+
+          event.preventDefault();
+
+          //  Если всё введено правильно, то отправляем письмо
+          $.ajax({
+            url: "mailer/smart.php",
+            data: { name: nameVal, phone: phoneVal }
+            // data: $(this).serialize()
+          }).done(function () {
+            $(this).find("input").val("");
+            // alert("Ваше сообщение успешно отправлено");
+
+            $('#modal-callback').removeClass('modal_visible');
+            $('#modal-test').addClass('modal_visible');
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').removeClass('modal_visible');
+              $('#modal-test').removeClass('modal_visible');
+            });
+
+            form_fb.trigger('reset');
+          });
+          return false;
+        };
+      });
+
+      // Форма модального окна modal
+      form_modal.validate({
+        rules: {
+          full_name_modal: {
+            required: true,
+            minlength: 2,
+          },
+          phone_modal: {
+            required: true,
+            phone: true
+          }
+        },
+        messages: {
+          full_name_modal: {
+            required: "Введите ваше имя",
+            minlength: "Ваше имя должно быть не менее 2 символов"
+          },
+          phone_modal: {
+            required: "Введите ваш номер телефона",
+            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+          }
+        }
+      });
+
+      form_modal.on('submit', function () {
+
+        var nameVal = $('[name = full_name_modal]').val(),
+          phoneVal = $('[name = phone_modal]').val();
+
+
+        //  Если всё введено правильно, то отправляем письмо
+        if (form_modal.valid()) {
+
+          event.preventDefault();
+
+          $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: { name: nameVal, phone: phoneVal }
+            // data: $(this).serialize()
+          }).done(function () {
+            $(this).find("input").val("");
+            // alert("Ваше сообщение успешно отправлено");
+
+            $('#modal-callback').removeClass('modal_visible');
+            $('#modal-test').addClass('modal_visible');
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').removeClass('modal_visible');
+              $('#modal-test').removeClass('modal_visible');
+            });
+
+            form_modal.trigger('reset');
+          });
+          return false;
+        };
+      });
+
+      // Форма callback
+      form_cb.validate({
+        rules: {
+          full_name_cb: {
+            required: true,
+            minlength: 2,
+          },
+          phone_cb: {
+            required: true,
+            phone: true
+          }
+        },
+        messages: {
+          full_name_cb: {
+            required: "Введите ваше имя",
+            minlength: "Ваше имя должно быть не менее 2 символов"
+          },
+          phone_cb: {
+            required: "Введите ваш номер телефона",
+            phone: "Номер в формате +7-999-99-99-999, где 9 – любая цифра."
+          }
+        }
+      });
+
+      form_cb.on('submit', function (event) {
+
+        var nameVal = $('[name = full_name_cb]').val(),
+          phoneVal = $('[name = phone_cb]').val();
+
+        // Если всё введено правильно, то отправляем письмо
+        if (form_cb.valid()) {
+
+          event.preventDefault();
+
+          $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: { name: nameVal, phone: phoneVal }
+            // data: $(this).serialize()
+          }).done(function () {
+            $(this).find("input").val("");
+            // alert("Ваше сообщение успешно отправлено");
+
+            $('#modal-callback').removeClass('modal_visible');
+            $('#modal-test').addClass('modal_visible');
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').removeClass('modal_visible');
+              $('#modal-test').removeClass('modal_visible');
+            });
+
+            form_cb.trigger('reset');
+          });
+        };
+        return false;
+      });
+    });
+  </script>
+
+  <!-- Яндекс.Карты с помощью API -->
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+      // Создание карты.    
+      var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        center: [55.68419012, 37.41382031],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 15
+      });
+      // Отключаем скролл колесиком
+      myMap.behaviors.disable('scrollZoom');
+      // Метка по умолчанию
+      var myPlacemark = new ymaps.Placemark([55.68419012, 37.41382031], {
+        hintContent: 'Офис компании',
+        balloonContent: 'Приходите к нам!'
+      });
+      // Собственная метка
+      var myPlacemark1 = new ymaps.Placemark([55.68419012, 37.41382031], {
+        hintContent: 'Офис компании',
+        balloonContent: 'Приходите к нам!'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/footer/pin.png',
+          // Размеры метки.
+          iconImageSize: [64, 64],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-30, -58]
+        });
+      myMap.geoObjects.add(myPlacemark1);
+    }
+  </script>
+  
+  <!-- Счетчики для яндекс.метрики -->
   <!-- <script>
     document.querySelector('#button-callback').addEventListener('click', function () {
         ym(51509990, 'reachGoal', 'btn'); return true;
@@ -1208,6 +1192,12 @@
       ym(51509990, 'reachGoal', 'form'); return true;
     });
   </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51509990, "init", { id: 51509990, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/51509990" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- Yandex.Metrika counter -->
 
 </body>
 </html>
