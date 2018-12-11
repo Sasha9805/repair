@@ -1815,6 +1815,9 @@ li {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .price-wrap {
+    margin-bottom: 80px;
+  }
   .step__arrow {
     display: none;
   }
@@ -1845,8 +1848,12 @@ li {
   .info {
     margin-right: 40px;
   }
+  .duties {
+    padding-bottom: 100px;
+  }
   .aid {
     padding: 5px;
+    margin-bottom: 80px;
   }
   .aid__text {
     margin-left: 0;
@@ -1865,6 +1872,9 @@ li {
   .garanty__img {
     padding: 15px;
     width: 220px;
+  }
+  .contacts {
+    padding-top: 80px;
   }
 }
 
