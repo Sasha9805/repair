@@ -67,6 +67,22 @@
       flex-direction: row
   .info
     margin-right: 40px
+
+  .aid
+    padding: 5px
+    &__text
+      margin-left: 0
+      width: 100%
+      text-align: justify
+  .garanty
+    width: 30%
+    &__text
+      font-size: 16px
+      &-2
+        width: 250px
+    &__img
+      padding: 15px
+      width: 220px
 @media (max-width: 768px)
   .hidden-xs
     display: none
@@ -137,6 +153,31 @@
       flex-direction: column
   .info
     margin-right: 0
+
+  .duties
+    padding: 80px
+  .support
+    &-wrap
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  .aid
+    padding: 5px
+    width: 100%
+    margin-bottom: 20px
+  .garanties
+    &__title
+      width: 100%
+      margin-bottom: 10px
+    &-wrap
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  .garanty
+    width: 100%
+    margin-bottom: 20px
+    &__img
+      margin-bottom: 10px
 @media (max-width: 576px)
   .header
     &-text
@@ -224,3 +265,23 @@
     padding-top: 0
     &__title
       font-size: 18px
+
+  .support
+    &-wrap
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  .aid
+    width: 250px
+    margin-bottom: 20px
+  .garanties
+    &-wrap
+      flex-direction: column
+    &__title
+      max-width: 100%
+      max-height: 200px
+      font-size: 18px
+      margin-bottom: 20px
+  .garanty
+    margin-bottom: 15px
+    width: 100%

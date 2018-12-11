@@ -1582,6 +1582,125 @@ template {
   font-family: "Museo Sans Bold", sans-serif;
 }
 
+.duties {
+  padding-top: 100px;
+  padding-bottom: 228px;
+}
+
+.support-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aid {
+  background-color: #f7f7f7;
+  margin-bottom: 143px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aid__text {
+  margin-top: 27px;
+  margin-left: 26px;
+  line-height: 23px;
+  font-size: 16px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.aid__text_bold {
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.aid__text-1 {
+  width: 260px;
+}
+
+.aid__image {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-garanties {
+  min-height: 310px;
+}
+
+.garanties__title {
+  width: 642px;
+  margin: 0 auto;
+  margin-bottom: 99px;
+}
+
+.garanties-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.garanty {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.garanty__img {
+  padding: 25px;
+  margin-bottom: 41px;
+  background-color: #f7f7f7;
+  width: 270px;
+  min-height: 360px;
+}
+
+.garanty__text {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.garanty__text-1 {
+  width: 190px;
+}
+
+.garanty__text-2 {
+  width: 290px;
+}
+
+.garanty__text-3 {
+  width: 277px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1728,6 +1847,27 @@ li {
   .info {
     margin-right: 40px;
   }
+  .aid {
+    padding: 5px;
+  }
+  .aid__text {
+    margin-left: 0;
+    width: 100%;
+    text-align: justify;
+  }
+  .garanty {
+    width: 30%;
+  }
+  .garanty__text {
+    font-size: 16px;
+  }
+  .garanty__text-2 {
+    width: 250px;
+  }
+  .garanty__img {
+    padding: 15px;
+    width: 220px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1834,6 +1974,49 @@ li {
   }
   .info {
     margin-right: 0;
+  }
+  .duties {
+    padding: 80px;
+  }
+  .support-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aid {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .garanties__title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .garanties-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .garanty {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .garanty__img {
+    margin-bottom: 10px;
   }
 }
 
@@ -1990,6 +2173,38 @@ li {
   }
   .contacts__title {
     font-size: 18px;
+  }
+  .support-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aid {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .garanties-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .garanties__title {
+    max-width: 100%;
+    max-height: 200px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .garanty {
+    margin-bottom: 15px;
+    width: 100%;
   }
 }
 
