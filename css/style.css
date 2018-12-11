@@ -1905,7 +1905,7 @@ li {
   }
   .form__manager {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .form__contacts {
     display: -webkit-box;
@@ -1920,8 +1920,7 @@ li {
             align-items: center;
   }
   .form__contacts:before {
-    margin-right: 0;
-    margin-bottom: 10px;
+    display: none;
   }
   .section-title {
     font-size: 20px;
@@ -1995,6 +1994,7 @@ li {
   }
   .garanties__title {
     width: 100%;
+    line-height: 30px;
     margin-bottom: 10px;
   }
   .garanties-wrap {
@@ -2037,6 +2037,12 @@ li {
   .header-text__phone {
     font-size: 16px;
   }
+  .main-text__title {
+    font-size: 24px;
+  }
+  .main-text__subtitle {
+    font-size: 13px !important;
+  }
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2046,8 +2052,20 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .form__title {
+    font-size: 20px;
+  }
+  .form__input {
+    width: 80%;
+  }
   .form__input:first-child {
     margin-right: 0;
+  }
+  .form__button {
+    font-size: 11px !important;
+    padding: 18px;
+    width: 80%;
+    margin: 0 auto;
   }
   .form__manage-team {
     display: -webkit-box;
@@ -2139,6 +2157,20 @@ li {
   .callback__form__footer {
     width: 300px;
   }
+  .portfolio {
+    padding-top: 10px;
+  }
+  .portfolio__title {
+    line-height: 30px;
+  }
+  .feedback {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .price {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
   .price-experts {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2154,9 +2186,17 @@ li {
   .price__title {
     font-size: 18px;
     width: 80%;
+    line-height: 30px;
   }
   .price__subtitle {
     font-size: 14px;
+  }
+  .text {
+    padding: 16px;
+  }
+  .text__title {
+    font-size: 14px !important;
+    line-height: 30px;
   }
   .map {
     -webkit-box-ordinal-group: 3;
@@ -2171,6 +2211,12 @@ li {
   }
   .contacts__title {
     font-size: 18px;
+  }
+  .duties {
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .support-wrap {
     -webkit-box-orient: vertical;
@@ -2195,10 +2241,9 @@ li {
             flex-direction: column;
   }
   .garanties__title {
-    max-width: 100%;
-    max-height: 200px;
     font-size: 18px;
-    margin-bottom: 20px;
+    width: 100%;
+    line-height: 30px;
   }
   .garanty {
     margin-bottom: 15px;
@@ -2227,50 +2272,27 @@ li {
     width: 767px;
   }
   .modal__left {
-    min-width: 55%;
-    padding: 20px 20px;
-  }
-  .modal__rooms {
-    height: 100%;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .modal__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .modal__img {
-    margin-right: 0;
-  }
-  .modal__line_yellow {
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
   .modal__labor {
     display: none;
+  }
+  .modal__right {
+    width: 100%;
+  }
+  .modal__input {
+    width: 50%;
+    margin: 0 auto;
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1px;
+  }
+  .modal__form {
+    text-align: center;
   }
   .button__none {
     display: none;
@@ -2280,89 +2302,17 @@ li {
 @media (max-width: 768px) {
   .modal__dialog {
     width: 577px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .modal__left {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    height: 40%;
-    width: 100%;
-  }
-  .modal__descr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .modal__rooms {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .modal__right {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    height: 60%;
     width: 100%;
-  }
-  .modal__title-tel {
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .modal__subtitle-tel {
-    margin-bottom: 10px;
+    height: 100%;
   }
   .modal__input {
-    width: 95%;
+    width: 80%;
   }
   .modal__button {
-    width: 95%;
-  }
-  .modal__footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 65%;
-  }
-  .modal__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 80%;
+    margin-bottom: 15px;
   }
 }
 
@@ -2370,37 +2320,8 @@ li {
   .modal__dialog {
     width: 100%;
   }
-  .modal__left {
-    display: none;
-  }
-  .modal__right {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .modal__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .modal__input {
-    width: 100%;
-  }
   .modal__button {
-    width: 100%;
+    margin-bottom: 60px;
     font-size: 14px;
   }
   .modal__footer-text {
