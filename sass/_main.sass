@@ -1,6 +1,7 @@
 .main
   background-color: $light-bg-color
   padding: 60px 0
+  position: relative
   &-wrap
     display: flex
   &-text
@@ -16,16 +17,25 @@
         display: block
         margin-top: 20px
   &-image
+    position: absolute
     flex-basis: 50%
+    min-width: 736px
+    min-height: 630px
+    left: 51%
+    z-index: 100
   &-advantages
     display: flex
     flex-direction: column
-    max-width: 350px
+    max-width: 330px
+    &__text
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
     &__item
       // border: 1px solid black
       display: flex
       align-items: center
-      margin-bottom: 30px
+      margin-bottom: 25px
     &__img
       min-width: 40px
       height: 40px

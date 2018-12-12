@@ -1,5 +1,5 @@
 .callback
-  padding: 106px 0
+  padding: 70px 0
   background: url('../img/callback/callback-bg.jpg') no-repeat center left 700px
   background-size: contain
   position: relative
@@ -21,19 +21,24 @@
     flex-direction: column
     justify-content: flex-start
   &__title
-    margin-bottom: 50px
+    +bold
     font-size: 22px
-    width: 515px
+    font-weight: 400
+    line-height: 33px
+    margin-bottom: 30px
+    width: 525px
   &__subtitle
-    width: 305px
-    margin-bottom: 95px
     font-size: 16px
+    font-weight: 400
+    line-height: 45px
+    width: 305px
+    margin-bottom: 75px
   &__list
   &__item
-    width: 450px
+    width: 470px
     display: flex
     align-items: center
-    margin-bottom: 26px
+    margin-bottom: 23px
   &__number
     &-1
       padding: 12px 12px 13px 13px
@@ -50,6 +55,8 @@
     font-size: 14px
     font-weight: 400  
   &__descr
+    font-weight: 400
+    font-size: 18px
     +semibold 
   &__form
     display: flex
@@ -59,18 +66,24 @@
     width: 370px
     margin-left: 280px
     &-title
+      +bold
       visibility: hidden
-      margin-bottom: 50px
       font-size: 22px
+      font-weight: 400
+      line-height: 33px
+      margin-bottom: 40px
       // width: 336px
     &-subtitle
       visibility: hidden
-      margin-bottom: 95px
+      margin-bottom: 40px
       font-size: 16px
+      font-weight: 400
+      line-height: 35px
     &-input
       visibility: hidden
       width: 370px
       margin-right: 0
+      margin-bottom: 15px
     &-button
       visibility: hidden
       margin-bottom: 33px
