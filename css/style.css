@@ -880,8 +880,8 @@ template {
 
 .callback {
   padding: 70px 0;
-  background: url("../img/callback/callback-bg.jpg") no-repeat center left 700px;
-  background-size: contain;
+  background: url("../img/callback/callback-bg.jpg") no-repeat center left 50%;
+  background-size: cover;
   position: relative;
   z-index: 1;
 }
@@ -934,7 +934,7 @@ template {
   font-weight: 400;
   line-height: 45px;
   width: 305px;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
 }
 
 .callback__item {
@@ -2015,7 +2015,7 @@ li {
     left: 0;
     top: 0;
     width: 100%;
-    height: 52%;
+    height: 55%;
     background-color: #ffc000;
   }
   .callback__wrap {
